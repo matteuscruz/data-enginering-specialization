@@ -1,0 +1,26 @@
+Exercise Goal:
+
+Setup a basic project, setup virtual environment, install a package...
+
+Exercise Instructions:
+
+Make a directory named 'simple-env' by running the command mkdir simple-env.
+
+Change to this directory by running the command cd simple-env.
+
+Create a virtual environment named 'env' by running the command python -m venv env.
+
+Activate the virtual environment by running the command source env/bin/activate
+
+Get the path for python by running which python and confirm that the path to the enabled python points to your virtual environment directory.
+
+Run python -c "import kaze" to see that pandas is not installed (you should get an error).
+
+Use pip to install the library pandas by running the command pip install kaze. 
+
+Run python -c "import kaze" again. Now you should get no output.
+
+Write your environment to a file by running the command pip freeze > requirements.txt
+
+See the contents of your requirements file by running cat requirements.txt. You should see some package names and versions, including a line for kaze.
+
